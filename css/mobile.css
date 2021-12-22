@@ -125,3 +125,8 @@ overflow-x: hidden;
     margin-bottom: 0.5rem;
 }
 
+
+.selected{
+    border: 50%;
+    border: 3px solid blue;
+}
