@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    font: 16px;
+}
+
+body{
+    font-family: Roboto;
+    background-color: 
+    #F2F2F2;
+}
+
+/* 
+===============GERAIS=========================
+*/
+:root{
+    --background-principal:#404EED;
+    --background-base: #E5E5E5;
+    --cor-texto-produto: #232323
+    --btn-fundo-pedido: #C4C4C4;
+    --fundo-modelo: #e7edf0b0;
+    --btn-color:#C4C4C4;
+}
+
+
+section{
+    padding: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gridRequest{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+
+}
+
+/* 
+===============GERAIS=========================
+*/
+
+/* ============MENU=========================== */
+
+.navigation{
+overflow-x: hidden;
+    padding: 1.2rem;
+    background: var(--background-principal);
+}
+
+.logo-menu{
+    display: inline-block;
+    width: 16.5rem;
+}
+
+/* ============MAIN=========================== */
+
+
+.cardImage{
+    text-align: center;
+}
+
+.cardImage img{
+    background: var(--fundo-modelo);
+    border-radius: 50%;
+    width: 107px;
+}
+
+/* ============DO USUÁRIO========== */
+.boxUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputLink{
+    background: var(--fundo-modelo);
+    padding: 0.9rem 4.9rem;
+    border: none;
+}
+
+#btnLink{
+    margin-top: 0.9rem;
+    padding: 0.6rem 7rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--btn-color);
+    color: white;
+}
+
+/* 
+===================MODA-AREA===========================
+
+*/
+#modaAria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-principal);
+}
+
+/* ===================BOX-REQUEST=========================== */
+
+.boxRequest{
+    padding: 1.2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.titleLastRequest{
+    margin-bottom: 0.5rem;
+}
