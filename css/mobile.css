@@ -71,10 +71,10 @@ overflow-x: hidden;
     text-align: center;
 }
 
-.cardImage img{
+.cardImage img {
     background: var(--fundo-modelo);
     border-radius: 50%;
-    width: 107px;
+    width: 72px;
 }
 
 /* ============DO USUÁRIO========== */
