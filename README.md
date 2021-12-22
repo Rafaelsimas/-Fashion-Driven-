@@ -1,4 +1,4 @@
-![imagem] (https://us.123rf.com/450wm/doctorblack/doctorblack1506/doctorblack150600014/41436974-schets-mode-meisjes.jpg?ver=6)
+
 
 # 👯 Projeto - Fashion Driven
 
