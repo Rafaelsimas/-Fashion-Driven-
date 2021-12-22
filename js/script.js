@@ -1,5 +1,2 @@
-const btn = document.querySelector('#btnLink')
-btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    alert('Esta funcionalidade ainda não foi implementada')
-})
+const nomeUsuario = prompt('Olá bem vindo ao FahsionDriven. Qual é o seu nome ?')
+ 

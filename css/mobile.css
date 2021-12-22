@@ -75,6 +75,7 @@ overflow-x: hidden;
     background: var(--fundo-modelo);
     border-radius: 50%;
     width: 72px;
+    cursor: pointer;
 }
 
 /* ============DO USUÁRIO========== */
@@ -123,3 +124,4 @@ overflow-x: hidden;
 .titleLastRequest{
     margin-bottom: 0.5rem;
 }
+
