@@ -13,25 +13,34 @@ html {
 
 body{
     font-family: Roboto;
-    background-color: 
-    #F2F2F2;
+    background-color: var(--background-base);
 }
 
-/* 
-===============GERAIS=========================
-*/
 :root{
     --background-principal:#404EED;
     --background-base: #E5E5E5;
     --cor-texto-produto: #232323
     --btn-fundo-pedido: #C4C4C4;
-    --fundo-modelo: #e7edf0b0;
+    --fundo-modelo: #c9dfebb0;
     --btn-color:#C4C4C4;
 }
 
+nav{
+    background-color: var(--background-principal);
+    height: 4.5rem;
+    width: 100%;
+}
 
-section{
-    padding: 1.5rem;
+nav img{
+    padding-top: 0.8rem;
+    width: 14.9rem;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .grid{
@@ -40,93 +49,75 @@ section{
     gap: 18px;
 }
 
-.gridRequest{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 18px;
-
+.espaco-titulo{
+    padding: 1.5rem;
 }
 
-/* 
-===============GERAIS=========================
-*/
-
-/* ============MENU=========================== */
-
-.navigation{
-overflow-x: hidden;
-    padding: 1.2rem;
-    background: var(--background-principal);
-}
-
-.logo-menu{
-    display: inline-block;
-    width: 16.5rem;
-}
-
-/* ============MAIN=========================== */
-
-
-.cardImage{
-    text-align: center;
-}
-
-.cardImage img {
-    background: var(--fundo-modelo);
+.opcao img{
+    background-color: var(--fundo-modelo);
     border-radius: 50%;
-    width: 72px;
-    cursor: pointer;
 }
 
-/* ============DO USUÁRIO========== */
-.boxUsuario{
+.boxBtn{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-.inputLink{
-    background: var(--fundo-modelo);
-    padding: 0.9rem 4.9rem;
-    border: none;
 }
 
-#btnLink{
-    margin-top: 0.9rem;
-    padding: 0.6rem 7rem;
-    border: none;
-    border-radius: 10px;
-    background: var(--btn-color);
+input{
+    padding: 0.8rem 3.8rem;
+    background-color: var(--fundo-modelo);
+    margin-bottom: 20px;
+    
+}
+button{
+    padding: 0.8rem 5.9rem;
+    background-color: var(--btn-color);
     color: white;
 }
 
-/* 
-===================MODA-AREA===========================
+input, button{
+    border-radius: 8px;
+    border: none;
+}
 
-*/
-#modaAria{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.top-model{
+    margin-top: 1.5rem;
     background-color: var(--background-principal);
 }
 
-/* ===================BOX-REQUEST=========================== */
+.top-model img{
+    width: 100%;
+}
 
-.boxRequest{
-    padding: 0.8rem;
+.images-promo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-image{
+    padding-top: 4rem;
     text-align: center;
     background-color: white;
-    border-radius: 5px;
+    width: 310px;
+    height: 310px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
 }
 
-.titleLastRequest{
-    margin-bottom: 0.5rem;
+.opcoes .opcao.selecionado{
+    border: 5px solid blue;
 }
 
+.fazer-pedido.ativo{
+    background-color: #32B72F;
+    font-weight: bold;
+    padding: 8px 120px;
+    border-radius: 90px;
+    color: white;
 
-.selected{
-    border: 50%;
-    border: 3px solid blue;
 }
