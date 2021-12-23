@@ -38,7 +38,7 @@
                 </div>
             </div>
         <!-- ========SEGUNDO GRUPO======= -->
-        <div class="titulo espaco-titulo">Esolha o modelo</div>
+        <div class="titulo espaco-titulo">Esolha a gola</div>
         <div class="opcoes gola grid">
             <div class="opcao gola-v" onclick="selecionarGola('.gola-v', 'Gola v')">
                 <img src="./img/GolaV.png" alt="gola-v">
@@ -73,8 +73,10 @@
         <div class="interacaoUsuario">
             <div class="titulo espaco-titulo">Imagem de referência</div>
             <div class="boxBtn">
-                <input type="text" placeholder="Insira o link">
-                <button class="fazer-pedido">Confirmar pedido</button>
+                <input type="text" placeholder="Insira o link" id="campoUrl">
+                <a href="#">
+                    <button class="fazer-pedido">Confirmar pedido</button>
+                </a>
             </div>
         </div>
     </section>
@@ -88,25 +90,10 @@
 
         <!-- ========CARDS IMAGENS======= -->
         <div class="titulo espaco-titulo">Ultimos pedidos</div>
-        <div class="images-promo ">
-            <div class="card-image">
-                <img src="./img/Blusa1.png" alt="">
-            </div>
-            <div class="card-image">
-                <img src="./img/Blusa2.png" alt="">
-            </div>
-            <div class="card-image">
-                <img src="./img/Blusa3.png" alt="">
-            </div>
-            <div class="card-image">
-                <img src="./img/Blusa4.png" alt="">
-            </div>
-            <div class="card-image">
-                <img src="./img/Blusa5.png" alt="">
-            </div>
-        </div>
+        <div id="app"></div>
     </main>
 
     <script src="./js/scripts.js"></script>
+    <script src="./js/api.js"></script>
 </body>
 </html>

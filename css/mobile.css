@@ -121,3 +121,26 @@ input, button{
     color: white;
 
 }
+
+#app{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 18px;
+    padding-left: 1.4rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+#app image{
+    width: 280px;
+}
+
+
+
+.cardApi{
+    width: 440px;
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
