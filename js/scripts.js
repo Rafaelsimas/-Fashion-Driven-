@@ -58,6 +58,8 @@ function selecionarTecido(seletor, nome){
     habilitarBotaoSePedidoCompoleto()
 }
 
+
+
 function habilitarBotaoSePedidoCompoleto(){
    
    if(contador === 3){
@@ -65,9 +67,13 @@ function habilitarBotaoSePedidoCompoleto(){
     botao.classList.add('ativo')
     botao.innerHTML = 'Fechar pedido'
     const precoTotal =  precoPrato + precoBebida + precoSobremesa
-    const mensagem = "Olá eu gostaria de fazer o pedido:\n- Prato: " + prato + "\n Bebida: " + bebida + "\n Sobremesa: " + doce +"\n Total: " + precoTotal.toFixed(2) + " "
-    const mensagemFormatada = encodeURIComponent(mensagem) 
-    const url = 'https://wa.me/5521996119461?text=' + mensagemFormatada;
-    botao.setAttribute('href', url)
+    
+    const mensagem = "Olá eu gostaria de fazer o pedido:\n- Modelo: " + modelo + "\n Gola: " + gola + "\n Tecido: " + tecido +""
+    const mensagemFormatada = alert(mensagem) 
+
+    /* const mensagemFormatada = encodeURIComponent(mensagem)  */
+   /*  const url = 'https://wa.me/5521996119461?text=' + mensagemFormatada;
+    botao.setAttribute('href', url) */
    }
 }
+
