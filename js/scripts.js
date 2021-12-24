@@ -66,14 +66,17 @@ function habilitarBotaoSePedidoCompoleto(){
     const botao = document.querySelector('.fazer-pedido')
     botao.classList.add('ativo')
     botao.innerHTML = 'Fechar pedido'
-    const precoTotal =  precoPrato + precoBebida + precoSobremesa
+    const produtos =  modelo + gola + tecido
     
     const mensagem = "Olá eu gostaria de fazer o pedido:\n- Modelo: " + modelo + "\n Gola: " + gola + "\n Tecido: " + tecido +""
-    const mensagemFormatada = alert(mensagem) 
+    const mensagemFormatada = mensagem
+   const pedido = confirm(mensagemFormatada)
 
-    /* const mensagemFormatada = encodeURIComponent(mensagem)  */
-   /*  const url = 'https://wa.me/5521996119461?text=' + mensagemFormatada;
-    botao.setAttribute('href', url) */
    }
 }
+
+
+
+
+
 

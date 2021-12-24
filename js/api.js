@@ -12,11 +12,11 @@ function fetchData(){
         .map(user => {
             return `<div class="user">
             <div class="cardApi">Id: ${user.id}</div>
+            <div class="cardApi"><img class="imgApi" src="${user.image}" /></div>
+            <div class="cardApi">Owner: ${user.owner} </div>
             <div class="cardApi">Model: ${user.model}</div>
             <div class="cardApi">Neck: ${user.neck}</div>
             <div class="cardApi">Material: ${user.material}</div>
-            <div class="cardApi">Owner: ${user.owner} </div>
-            <div class="cardApi">Image: ${user.image} </div>
             </div>`
         })
         .join('')

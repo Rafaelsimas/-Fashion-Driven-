@@ -73,9 +73,9 @@
         <div class="interacaoUsuario">
             <div class="titulo espaco-titulo">Imagem de referência</div>
             <div class="boxBtn">
-                <input type="text" placeholder="Insira o link" id="campoUrl">
+                <input type="url" placeholder="Insira o link" id="campoUrl" required />
                 <a href="#">
-                    <button class="fazer-pedido">Confirmar pedido</button>
+                    <button onclick="novaImagem()" class="fazer-pedido">Confirmar pedido</button>
                 </a>
             </div>
         </div>
@@ -83,7 +83,7 @@
         <!-- ========BANNER TOP MODEL======= -->
         <section>
             <div class="top-model">
-                <img src="./img/ilustração.png" alt="">
+                <img class="ilustracao" src="./img/ilustração.png" alt="">
             </div>
         </section>
     </div>
@@ -95,5 +95,6 @@
 
     <script src="./js/scripts.js"></script>
     <script src="./js/api.js"></script>
+    <script src="./js/trocaImagem.js"></script>
 </body>
 </html>

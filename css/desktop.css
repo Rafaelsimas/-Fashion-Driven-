@@ -23,24 +23,30 @@
     .card-image{
         width: 280px;
     }
+
+    .imgApi{
+        width: 150px;
+    }
+
     #app{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 18px;
-        padding-left: 1.4rem;
+        padding-left: 13.9rem;
+    }
+
+    .user{
         background-color: white;
-        margin-bottom: 1rem;
+        width:350px;
+        height:350px;
+        margin-bottom: 30px;
+        text-align: center;
     }
 
-    #app image{
-        width: 280px;
+    .user img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
     }
 
-    .cardApi{
-        width: 320px;
-        height: 150px;
-        background-color: lightblue;
-        border-radius: 8px;
-        margin-bottom: 3rem;
-    }
 }
